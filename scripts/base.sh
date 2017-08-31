@@ -9,8 +9,9 @@ apt-get -qqy install linux-headers-$(uname -r) build-essential
 # Install development tools
 apt-get -qqy install zlib1g-dev libssl-dev libreadline-gplv2-dev \
   curl wget vim mc screen zsh unzip pbzip2 lsof htop iotop dstat \
-  telnet tcpdump make python python-apt python-dev ruby \
-  openjdk-7-jre-headless pkg-config libexpat1-dev avahi-daemon
+  telnet tcpdump make jq gnupg git build-essential apt-transport-https aptitude \
+  python python-apt python-dev python-jinja2 python-zmq python-tornado \
+  ruby openjdk-8-jre-headless pkg-config libexpat1-dev avahi-daemon
 
 # Remove unneeded items
 apt-get -qy purge exim4 exim4-base

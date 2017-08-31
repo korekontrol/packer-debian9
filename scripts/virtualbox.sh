@@ -5,14 +5,11 @@ if test -f .vbox_version ; then
   fi
 
   rmmod vboxguest
-  aptitude -y purge virtualbox-ose-guest-x11 virtualbox-ose-guest-dkms virtualbox-ose-guest-utils
+  apt-get -y purge virtualbox-ose-guest-x11 virtualbox-ose-guest-dkms virtualbox-ose-guest-utils
 
   # Install dkms for dynamic compiles
-
-  apt-get install -y dkms
-
   # If libdbus is not installed, virtualbox will not autostart
-  apt-get -y install --no-install-recommends libdbus-1-3
+  apt-get -y install --no-install-recommends libdbus-1-3 dkms
 
   # Install the VirtualBox guest additions
   mount -o loop VBoxGuestAdditions.iso /mnt
