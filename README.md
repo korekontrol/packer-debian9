@@ -12,14 +12,14 @@ KoreKontrol (https://www.korekontrol.eu/)
 ## Build vagrant box
 
 ```bash
-$ packer build debian-9-jessie-virtualbox.json
+$ packer build debian-9-stretch-virtualbox.json
 ```
 
 
 ## Install your new box
 
 ```bash
-$ vagrant box add debian-91 ./debian-91.box
+$ vagrant box add debian91 ./debian91.box
 ```
 
 
