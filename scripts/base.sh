@@ -4,6 +4,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 # Update the box
 apt-get -qqy update
+apt-get -qqy upgrade
 apt-get -qqy install linux-headers-$(uname -r) build-essential
 
 # Install development tools
