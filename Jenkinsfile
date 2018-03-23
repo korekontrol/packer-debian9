@@ -18,7 +18,7 @@ pipeline {
                     'export GITHUB_USER="korekontrol" && ' +
                     'export GITHUB_REPO="packer-debian9" && ' +
                     'set -x && ' +
-                    "export TAG=\"ci-${env.BUILD_NUMBER}\" && ' +
+                    "export TAG=\"ci-${env.BUILD_NUMBER}\" && " +
                     'github-release release --tag "${TAG}" --description "Automated build: ${TAG}" && ' +
                     'github-release upload --tag "${TAG}" --name *.box --file *.box'
             }
