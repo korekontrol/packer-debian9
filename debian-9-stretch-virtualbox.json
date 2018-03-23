@@ -6,7 +6,7 @@
     "ssh_port": "22",
     "ssh_wait_timeout": "10000s",
     "iso_url": "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.4.0-amd64-netinst.iso",
-    "iso_md5": "debian-9.4.0-amd64-netinst.iso",
+    "iso_md5": "73bd8aaaeb843745ec939f6ae3906e48",
     "vm_name": "debian94"
   },
   "builders": [
