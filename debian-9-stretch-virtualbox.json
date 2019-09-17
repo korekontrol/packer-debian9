@@ -5,9 +5,9 @@
     "disk_size": "75000",
     "ssh_port": "22",
     "ssh_wait_timeout": "10000s",
-    "iso_url": "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.6.0-amd64-netinst.iso",
-    "iso_md5": "0a5352e3568bc893a9f7b65192caf1e1",
-    "vm_name": "debian96"
+    "iso_url": "https://cdimage.debian.org/cdimage/archive/9.11.0/amd64/iso-cd/debian-9.11.0-amd64-netinst.iso",
+    "iso_md5": "f525f0c3f1c4ca184a604a75dabf4f71",
+    "vm_name": "debian911"
   },
   "builders": [
     {
